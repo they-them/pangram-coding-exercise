@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD5E9E6925B613BA00402D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E9E6825B613BA00402D9E /* AppDelegate.swift */; };
+		BD5E9E6B25B613BA00402D9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E9E6A25B613BA00402D9E /* SceneDelegate.swift */; };
+		BD5E9E6F25B613BB00402D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5E9E6E25B613BB00402D9E /* Assets.xcassets */; };
+		BD5E9E7225B613BB00402D9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5E9E7125B613BB00402D9E /* Preview Assets.xcassets */; };
+		BD5E9E7525B613BB00402D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5E9E7325B613BB00402D9E /* LaunchScreen.storyboard */; };
+		BD89F64D25B76559005EB9B8 /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F64825B76559005EB9B8 /* FirstRouter.swift */; };
+		BD89F64E25B76559005EB9B8 /* FirstModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F64925B76559005EB9B8 /* FirstModule.swift */; };
+		BD89F64F25B76559005EB9B8 /* FirstInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F64A25B76559005EB9B8 /* FirstInteractor.swift */; };
+		BD89F65025B76559005EB9B8 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F64B25B76559005EB9B8 /* FirstPresenter.swift */; };
+		BD89F65125B76559005EB9B8 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F64C25B76559005EB9B8 /* FirstView.swift */; };
+		BD89F65825B76563005EB9B8 /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F65325B76563005EB9B8 /* SecondRouter.swift */; };
+		BD89F65925B76563005EB9B8 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F65425B76563005EB9B8 /* SecondView.swift */; };
+		BD89F65A25B76563005EB9B8 /* SecondModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F65525B76563005EB9B8 /* SecondModule.swift */; };
+		BD89F65B25B76563005EB9B8 /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F65625B76563005EB9B8 /* SecondInteractor.swift */; };
+		BD89F65C25B76563005EB9B8 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F65725B76563005EB9B8 /* SecondPresenter.swift */; };
+		BD89F65F25B7657F005EB9B8 /* Viper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F65E25B7657F005EB9B8 /* Viper.swift */; };
+		BD89F66325B769CB005EB9B8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BD89F66225B769CB005EB9B8 /* Realm */; };
+		BD89F66525B769CB005EB9B8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD89F66425B769CB005EB9B8 /* RealmSwift */; };
+		BD89F66B25B769FE005EB9B8 /* Pangram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F66A25B769FE005EB9B8 /* Pangram.swift */; };
+		BD89F66E25B76A52005EB9B8 /* ServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F66D25B76A52005EB9B8 /* ServiceInterface.swift */; };
+		BD89F67125B76A5D005EB9B8 /* ServiceBuilderInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F67025B76A5D005EB9B8 /* ServiceBuilderInterface.swift */; };
+		BD89F67425B76A78005EB9B8 /* ServiceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F67325B76A78005EB9B8 /* ServiceBuilder.swift */; };
+		BD89F67725B76A84005EB9B8 /* RealmPersistenceServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F67625B76A84005EB9B8 /* RealmPersistenceServiceInterface.swift */; };
+		BD89F67A25B76AB9005EB9B8 /* RealmPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89F67925B76AB9005EB9B8 /* RealmPersistenceService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD5E9E6525B613BA00402D9E /* Pangram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pangram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5E9E6825B613BA00402D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD5E9E6A25B613BA00402D9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD5E9E6E25B613BB00402D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD5E9E7125B613BB00402D9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD5E9E7425B613BB00402D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD5E9E7625B613BB00402D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD89F64825B76559005EB9B8 /* FirstRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
+		BD89F64925B76559005EB9B8 /* FirstModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstModule.swift; sourceTree = "<group>"; };
+		BD89F64A25B76559005EB9B8 /* FirstInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInteractor.swift; sourceTree = "<group>"; };
+		BD89F64B25B76559005EB9B8 /* FirstPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		BD89F64C25B76559005EB9B8 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		BD89F65325B76563005EB9B8 /* SecondRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
+		BD89F65425B76563005EB9B8 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		BD89F65525B76563005EB9B8 /* SecondModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondModule.swift; sourceTree = "<group>"; };
+		BD89F65625B76563005EB9B8 /* SecondInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
+		BD89F65725B76563005EB9B8 /* SecondPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		BD89F65E25B7657F005EB9B8 /* Viper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper.swift; sourceTree = "<group>"; };
+		BD89F66A25B769FE005EB9B8 /* Pangram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pangram.swift; sourceTree = "<group>"; };
+		BD89F66D25B76A52005EB9B8 /* ServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInterface.swift; sourceTree = "<group>"; };
+		BD89F67025B76A5D005EB9B8 /* ServiceBuilderInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBuilderInterface.swift; sourceTree = "<group>"; };
+		BD89F67325B76A78005EB9B8 /* ServiceBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBuilder.swift; sourceTree = "<group>"; };
+		BD89F67625B76A84005EB9B8 /* RealmPersistenceServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistenceServiceInterface.swift; sourceTree = "<group>"; };
+		BD89F67925B76AB9005EB9B8 /* RealmPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistenceService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD5E9E6225B613BA00402D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD89F66525B769CB005EB9B8 /* RealmSwift in Frameworks */,
+				BD89F66325B769CB005EB9B8 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD5E9E5C25B613BA00402D9E = {
+			isa = PBXGroup;
+			children = (
+				BD5E9E6725B613BA00402D9E /* Pangram */,
+				BD5E9E6625B613BA00402D9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD5E9E6625B613BA00402D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD5E9E6525B613BA00402D9E /* Pangram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD5E9E6725B613BA00402D9E /* Pangram */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F64325B764AB005EB9B8 /* App */,
+				BD89F66725B769E2005EB9B8 /* Services */,
+				BD89F64525B76543005EB9B8 /* Modules */,
+				BD5E9E6E25B613BB00402D9E /* Assets.xcassets */,
+				BD89F65E25B7657F005EB9B8 /* Viper.swift */,
+				BD5E9E7325B613BB00402D9E /* LaunchScreen.storyboard */,
+				BD5E9E7625B613BB00402D9E /* Info.plist */,
+				BD5E9E7025B613BB00402D9E /* Preview Content */,
+			);
+			path = Pangram;
+			sourceTree = "<group>";
+		};
+		BD5E9E7025B613BB00402D9E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD5E9E7125B613BB00402D9E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD89F64325B764AB005EB9B8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BD5E9E6825B613BA00402D9E /* AppDelegate.swift */,
+				BD5E9E6A25B613BA00402D9E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BD89F64525B76543005EB9B8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F64625B76547005EB9B8 /* First */,
+				BD89F64725B7654C005EB9B8 /* Second */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BD89F64625B76547005EB9B8 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F64A25B76559005EB9B8 /* FirstInteractor.swift */,
+				BD89F64925B76559005EB9B8 /* FirstModule.swift */,
+				BD89F64B25B76559005EB9B8 /* FirstPresenter.swift */,
+				BD89F64825B76559005EB9B8 /* FirstRouter.swift */,
+				BD89F64C25B76559005EB9B8 /* FirstView.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		BD89F64725B7654C005EB9B8 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F65625B76563005EB9B8 /* SecondInteractor.swift */,
+				BD89F65525B76563005EB9B8 /* SecondModule.swift */,
+				BD89F65725B76563005EB9B8 /* SecondPresenter.swift */,
+				BD89F65325B76563005EB9B8 /* SecondRouter.swift */,
+				BD89F65425B76563005EB9B8 /* SecondView.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		BD89F66725B769E2005EB9B8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F66825B769F2005EB9B8 /* Realm */,
+				BD89F66D25B76A52005EB9B8 /* ServiceInterface.swift */,
+				BD89F67025B76A5D005EB9B8 /* ServiceBuilderInterface.swift */,
+				BD89F67325B76A78005EB9B8 /* ServiceBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD89F66825B769F2005EB9B8 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F66925B769F7005EB9B8 /* Model */,
+				BD89F67625B76A84005EB9B8 /* RealmPersistenceServiceInterface.swift */,
+				BD89F67925B76AB9005EB9B8 /* RealmPersistenceService.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		BD89F66925B769F7005EB9B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD89F66A25B769FE005EB9B8 /* Pangram.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD5E9E6425B613BA00402D9E /* Pangram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD5E9E7925B613BB00402D9E /* Build configuration list for PBXNativeTarget "Pangram" */;
+			buildPhases = (
+				BD5E9E6125B613BA00402D9E /* Sources */,
+				BD5E9E6225B613BA00402D9E /* Frameworks */,
+				BD5E9E6325B613BA00402D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pangram;
+			packageProductDependencies = (
+				BD89F66225B769CB005EB9B8 /* Realm */,
+				BD89F66425B769CB005EB9B8 /* RealmSwift */,
+			);
+			productName = Pangram;
+			productReference = BD5E9E6525B613BA00402D9E /* Pangram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD5E9E5D25B613BA00402D9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BD5E9E6425B613BA00402D9E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = BD5E9E6025B613BA00402D9E /* Build configuration list for PBXProject "Pangram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD5E9E5C25B613BA00402D9E;
+			packageReferences = (
+				BD89F66125B769CB005EB9B8 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = BD5E9E6625B613BA00402D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD5E9E6425B613BA00402D9E /* Pangram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD5E9E6325B613BA00402D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5E9E7525B613BB00402D9E /* LaunchScreen.storyboard in Resources */,
+				BD5E9E7225B613BB00402D9E /* Preview Assets.xcassets in Resources */,
+				BD5E9E6F25B613BB00402D9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD5E9E6125B613BA00402D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD89F65825B76563005EB9B8 /* SecondRouter.swift in Sources */,
+				BD89F65B25B76563005EB9B8 /* SecondInteractor.swift in Sources */,
+				BD89F65A25B76563005EB9B8 /* SecondModule.swift in Sources */,
+				BD89F65F25B7657F005EB9B8 /* Viper.swift in Sources */,
+				BD89F64F25B76559005EB9B8 /* FirstInteractor.swift in Sources */,
+				BD89F64E25B76559005EB9B8 /* FirstModule.swift in Sources */,
+				BD89F65925B76563005EB9B8 /* SecondView.swift in Sources */,
+				BD89F67425B76A78005EB9B8 /* ServiceBuilder.swift in Sources */,
+				BD5E9E6925B613BA00402D9E /* AppDelegate.swift in Sources */,
+				BD89F64D25B76559005EB9B8 /* FirstRouter.swift in Sources */,
+				BD89F65C25B76563005EB9B8 /* SecondPresenter.swift in Sources */,
+				BD89F67725B76A84005EB9B8 /* RealmPersistenceServiceInterface.swift in Sources */,
+				BD5E9E6B25B613BA00402D9E /* SceneDelegate.swift in Sources */,
+				BD89F67A25B76AB9005EB9B8 /* RealmPersistenceService.swift in Sources */,
+				BD89F65125B76559005EB9B8 /* FirstView.swift in Sources */,
+				BD89F66B25B769FE005EB9B8 /* Pangram.swift in Sources */,
+				BD89F66E25B76A52005EB9B8 /* ServiceInterface.swift in Sources */,
+				BD89F65025B76559005EB9B8 /* FirstPresenter.swift in Sources */,
+				BD89F67125B76A5D005EB9B8 /* ServiceBuilderInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD5E9E7325B613BB00402D9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD5E9E7425B613BB00402D9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD5E9E7725B613BB00402D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD5E9E7825B613BB00402D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD5E9E7A25B613BB00402D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pangram/Preview Content\"";
+				DEVELOPMENT_TEAM = 3R3SZSZHWH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Pangram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.they-them.Pangram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD5E9E7B25B613BB00402D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pangram/Preview Content\"";
+				DEVELOPMENT_TEAM = 3R3SZSZHWH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Pangram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.they-them.Pangram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD5E9E6025B613BA00402D9E /* Build configuration list for PBXProject "Pangram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5E9E7725B613BB00402D9E /* Debug */,
+				BD5E9E7825B613BB00402D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD5E9E7925B613BB00402D9E /* Build configuration list for PBXNativeTarget "Pangram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5E9E7A25B613BB00402D9E /* Debug */,
+				BD5E9E7B25B613BB00402D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD89F66125B769CB005EB9B8 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD89F66225B769CB005EB9B8 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD89F66125B769CB005EB9B8 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		BD89F66425B769CB005EB9B8 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD89F66125B769CB005EB9B8 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD5E9E5D25B613BA00402D9E /* Project object */;
+}
